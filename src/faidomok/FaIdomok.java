@@ -22,6 +22,7 @@ public class FaIdomok {
     
 
     public   FaIdomok() {
+       
     }
 
    public double oszsuly(List<FaIdom> idomoklista) {
@@ -37,13 +38,13 @@ public class FaIdomok {
 
    
     faIdomok.add(new Gomb(5));
-    faIdomok.add(new Gomb(1));
+    faIdomok.add(new Gomb(0.5));
     faIdomok.add(new Gomb(9));
     faIdomok.add(new Gomb(8));
     faIdomok.add(new Hasab(2, 3, 4)); 
     faIdomok.add(new Hasab(1, 2, 2)); 
     faIdomok.add(new Hasab(6, 6, 6)); 
-    faIdomok.add(new Hasab(3, 4, 5)); 
+    faIdomok.add(new Hasab(100, 100, 200)); 
 
     return faIdomok;
 }
@@ -66,5 +67,36 @@ public class FaIdomok {
 
     return osszsuly;
 }
+
+    public String minV(List<FaIdom> idomoklista) {
+ 
+    FaIdom minTerfogatuIdom = idomoklista.get(0);
+    double minTerfogat = minTerfogatuIdom.Terfogat();
+
+    for (FaIdom elem : idomoklista) {
+        if (elem.Terfogat() < minTerfogat) {
+            minTerfogatuIdom = elem;
+            minTerfogat = elem.Terfogat();
+        }
+    }
+
+    return minTerfogatuIdom.toString();
+}
+
+
+    public String maxV(List<FaIdom> idomoklista) {
+         FaIdom MAXTerfogatuIdom = idomoklista.get(0);
+    double MAXTerfogat = MAXTerfogatuIdom.Terfogat();
+
+    for (FaIdom elem : idomoklista) {
+        if (elem.Terfogat() > MAXTerfogat) {
+            MAXTerfogatuIdom = elem;
+            MAXTerfogat = elem.Terfogat();
+        }
+    }
+
+     return MAXTerfogatuIdom.toString();
+    }
+    
     
 }

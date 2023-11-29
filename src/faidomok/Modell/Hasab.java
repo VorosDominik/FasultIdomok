@@ -26,7 +26,7 @@ public class Hasab extends FaIdom{
 
     @Override
     public String toString() {
-        return "Hasab{" + "A=" + A + ", B=" + B + ", Magassag=" + Magassag + "Terfogata = "+Terfogat()+"Sulya= "+suly()+'}';
+        return "Hasab{" + "A=" + A + ", B=" + B + ", Magassag=" + Magassag + "Terfogata = "+Terfogat()+" Sulya= "+suly()+ super.toString().replace("FaIdom", "")+'}';
     }
   
     

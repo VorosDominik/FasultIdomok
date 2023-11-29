@@ -24,7 +24,7 @@ public class Gomb extends FaIdom{
 
     @Override
     public String toString() {
-        return "Gomb{" + "sugar=" + sugar +"Terfogata = "+Terfogat()+"Sulya= "+suly()+ '}' + super.toString();
+        return "Gomb{" + "sugar=" + sugar +" Terfogata = "+Terfogat()+" Sulya= "+suly()+ super.toString().replace("FaIdom", "")+'}';
     }
     
     

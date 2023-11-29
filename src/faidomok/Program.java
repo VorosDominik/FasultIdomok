@@ -21,6 +21,8 @@ public class Program {
         fa.listakiir(idomok);
         System.out.println("Az összsúly: " + fa.oszsuly(idomok));
         System.out.println("A gombok összsúlya: " + fa.csakAgomb(idomok));
+        System.out.println("a leg kisebb térfogatu idom adatai: "+fa.minV(idomok));
+        System.out.println("a leg nagyobb térfoagtú idom adatai: "+fa.maxV(idomok));
        
        
        

@@ -23,6 +23,8 @@ public abstract class  FaIdom {
     public String toString() {
         return "FaIdom{" +"falysuj = " +falysuj + '}';
     }
+
+    
     
     
       
